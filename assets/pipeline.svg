@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360">
+<rect width="760" height="360" rx="28" fill="#F5F8FC"/>
+<g font-family="Arial, sans-serif" font-size="16" text-anchor="middle">
+<rect x="30" y="126" width="150" height="108" rx="20" fill="#FFFFFF" stroke="#BFD2EA"/>
+<text x="105" y="166" fill="#163A69" font-weight="700">Data Sources</text>
+<text x="105" y="194" fill="#5E7188">D365 • HubSpot</text>
+<text x="105" y="216" fill="#5E7188">Vendor APIs</text>
+<rect x="305" y="126" width="150" height="108" rx="20" fill="#FFFFFF" stroke="#BFD2EA"/>
+<text x="380" y="166" fill="#163A69" font-weight="700">Integration Layer</text>
+<text x="380" y="194" fill="#5E7188">REST • JSON</text>
+<text x="380" y="216" fill="#5E7188">Azure Logic Apps</text>
+<rect x="580" y="126" width="150" height="108" rx="20" fill="#FFFFFF" stroke="#BFD2EA"/>
+<text x="655" y="166" fill="#163A69" font-weight="700">Salesforce</text>
+<text x="655" y="194" fill="#5E7188">Apex • Flow • LWC</text>
+<text x="655" y="216" fill="#5E7188">Reports • Security</text>
+<path d="M180 180 H295" stroke="#2267D8" stroke-width="8" stroke-linecap="round"/>
+<path d="M455 180 H570" stroke="#2267D8" stroke-width="8" stroke-linecap="round"/>
+<polygon points="290,170 305,180 290,190" fill="#2267D8"/><polygon points="565,170 580,180 565,190" fill="#2267D8"/>
+</g></svg>
