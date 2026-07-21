@@ -24,31 +24,107 @@
 </header>
 
 <main>
-<section class="page-hero"><div class="container"><span class="eyebrow">Selected Solution Stories</span><h1>Resume-based Salesforce projects</h1><p>These project summaries are derived from documented work history. They emphasize development, automation, integrations, governance, data quality, and the foundations required for trustworthy Salesforce AI solutions.</p></div></section>
-<section class="section"><div class="container"><div class="grid-2">
-<article class="card project-card">
-  <span class="label">Project 1</span><h3>Salesforce BAU Governance & Release Control</h3>
-  <dl><dt>Business problem</dt><dd>Mission-critical Salesforce work was spread across tickets, meetings, emails, and multiple governance systems, increasing release and audit risk.</dd><dt>Approach</dt><dd>Structured triage and backlog practices; documented environment strategy, UAT sign-off, deployment ownership, rollback, smoke tests, and closure evidence.</dd><dt>Tools used</dt><dd>Salesforce, ServiceNow, Jira, Confluence, Gearset, Sandboxes, UAT</dd><dt>Outcome</dt><dd>Improved support traceability, release visibility, audit readiness, and production change discipline.</dd><dt>JD-aligned keywords</dt><dd>governed AI delivery, auditability, release management, production support</dd></dl>
-</article>
-<article class="card project-card">
-  <span class="label">Project 2</span><h3>Quote-to-Order & TaskRay Automation</h3>
-  <dl><dt>Business problem</dt><dd>Quote synchronization, product tiers, recurring fees, approvals, documents, and order-to-project timing created operational blockers.</dd><dt>Approach</dt><dd>Analyzed quote behavior, product setup, approval logic, generated documents, Screen Flows, record locking, template selection, and UAT scenarios.</dd><dt>Tools used</dt><dd>Sales Cloud, Apex, Flow Builder, TaskRay, SOQL, Approvals</dd><dt>Outcome</dt><dd>Improved workflow clarity and supported safer automation changes across sales and implementation operations.</dd><dt>JD-aligned keywords</dt><dd>business automation, orchestration, human-in-the-loop review, CRM workflows</dd></dl>
-</article>
-<article class="card project-card">
-  <span class="label">Project 3</span><h3>LexisNexis Salesforce Integration Readiness</h3>
-  <dl><dt>Business problem</dt><dd>A due-diligence integration required clearer ownership across authentication, permissions, mappings, triggers, reports, and support procedures.</dd><dt>Approach</dt><dd>Reviewed Named Credentials, allowed users, package configuration, page layouts, search mappings, triggers, batch jobs, alerts, and reporting visibility.</dd><dt>Tools used</dt><dd>Named Credentials, REST concepts, Apex, Batch Jobs, Security, Reports</dd><dt>Outcome</dt><dd>Strengthened production readiness and reduced risk around access, authentication, mappings, and handoff.</dd><dt>JD-aligned keywords</dt><dd>secure AI integrations, trusted data access, permissions, explainable support</dd></dl>
-</article>
-<article class="card project-card">
-  <span class="label">Project 4</span><h3>Smart Parking CRM & Operational Automation</h3>
-  <dl><dt>Business problem</dt><dd>Reservation, payment, customer service, shuttle, and lot-capacity information needed one coordinated CRM view.</dd><dt>Approach</dt><dd>Built custom data models, Apex and Flow automation, Lightning pages, service cases, API integrations, validation, error logging, and dashboards.</dd><dt>Tools used</dt><dd>Salesforce CRM, Apex, Flow, REST APIs, JSON, Dashboards</dd><dt>Outcome</dt><dd>Centralized operations, improved reporting accuracy, and made failed integrations and customer issues easier to investigate.</dd><dt>JD-aligned keywords</dt><dd>real-time operations, service automation, data quality, observability</dd></dl>
-</article>
-<article class="card project-card">
-  <span class="label">Project 5</span><h3>Retail Loyalty & Campaign CRM</h3>
-  <dl><dt>Business problem</dt><dd>Small businesses were moving from spreadsheets and disconnected tools to structured customer, order, loyalty, and promotion workflows.</dd><dt>Approach</dt><dd>Designed custom objects, loyalty rules, customer segmentation, campaign automation, POS/web/payment integrations, and performance reporting.</dd><dt>Tools used</dt><dd>Apex, SOQL, Flow, REST APIs, JSON, Reports, Dashboards</dd><dt>Outcome</dt><dd>Reduced duplicate entry, improved customer visibility, and enabled more structured promotion and retention decisions.</dd><dt>JD-aligned keywords</dt><dd>customer intelligence, segmentation, predictive-ready data, CRM analytics</dd></dl>
-</article></div></div></section>
-<section class="section section-soft"><div class="container grid-2"><div><h2>Architecture pattern</h2><p class="lead">Michael's experience repeatedly connects external platforms to governed Salesforce workflows through APIs, data validation, automation, security, observability, and release controls.</p></div><div class="visual"><img src="assets/pipeline.svg" alt="Salesforce integration architecture"></div></div></section>
-</main>
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Selected Solution Stories</span>
+    <h1>Salesforce projects</h1>
+    <p>These are the delivery stories behind my work — the business friction I walked into, the concrete platform solutions I designed or supported, and what changed once the automation, integrations, and controls were in place.</p>
+  </div>
+</section>
 
+<section class="section">
+  <div class="container">
+    <div class="grid-2">
+
+<article class="card project-card">
+  <span class="label">Project 1</span>
+  <h3>Salesforce BAU Governance & Release Control</h3>
+  <dl>
+    <dt>Business problem</dt>
+    <dd>At Intrado Life & Safety, mission-critical Salesforce work was scattered across ServiceNow tickets, meetings, emails, and tribal knowledge. Production changes were hard to trace, auditors needed clearer evidence, and BAU support lacked a shared release model.</dd>
+    <dt>Solution</dt>
+    <dd>I drafted a Salesforce change-control and deployment process aligned with D365 and ServiceNow standards: ServiceNow intake, sandbox development, UAT sign-off, Gearset/Change Set promotion, production deployment ownership, emergency-change handling, rollback expectations, smoke testing, and audit evidence retention. I also organized recurring BAU themes around quoting, products, approvals, access, alerts, and integrations so triage had a repeatable path instead of one-off fixes.</dd>
+    <dt>Tools used</dt>
+    <dd>Salesforce, ServiceNow, Jira, Confluence, Gearset, Change Sets, Sandboxes, UAT</dd>
+    <dt>Outcome</dt>
+    <dd>Support work became easier to hand off, release ownership was clearer, and production changes followed a governed path that improved audit readiness and reduced unmanaged edits.</dd>
+  </dl>
+</article>
+
+<article class="card project-card">
+  <span class="label">Project 2</span>
+  <h3>Quote-to-Order & TaskRay Automation</h3>
+  <dl>
+    <dt>Business problem</dt>
+    <dd>Quote synchronization, price books, product tiers, recurring fees, bundled products, approvals, and generated documents created sales friction. Downstream, TaskRay project creation from Salesforce orders failed partway through — users could create the project, but order-product mapping broke under record locking and unclear approval-versus-activation timing.</dd>
+    <dt>Solution</dt>
+    <dd>I traced quote behavior end to end: product setup, dynamic quote fields, approval logic, and document generation. On the TaskRay side, I reviewed Screen Flow steps, button visibility, project template selection, order-product association, and locking risk. The key decision was clarifying whether project creation should fire on order approval or order activation, then validating that behavior in UAT before any production change under change control.</dd>
+    <dt>Tools used</dt>
+    <dd>Sales Cloud, Apex, Flow Builder, Screen Flows, TaskRay, SOQL, Approvals, UAT</dd>
+    <dt>Outcome</dt>
+    <dd>Sales and implementation teams gained clearer quote-to-project behavior, automation changes became safer to promote, and BAU support had documented expected paths for troubleshooting.</dd>
+  </dl>
+</article>
+
+<article class="card project-card">
+  <span class="label">Project 3</span>
+  <h3>LexisNexis Salesforce Integration Readiness</h3>
+  <dl>
+    <dt>Business problem</dt>
+    <dd>Salesforce used LexisNexis Accurint for due-diligence and risk screening, but Salesforce-side ownership was thin. Support needed a clear map of authentication, allowed users, search mappings, page layouts, triggers, batch jobs, alerts, and report visibility before production handoff.</dd>
+    <dt>Solution</dt>
+    <dd>I reviewed the Salesforce package configuration end to end: Named Credentials, allowed users, global settings, search mappings, Lightning page layouts and related lists, triggers, batch jobs, alerts, and reporting objects. I turned that review into support ownership notes, go-live readiness checks, and testing scenarios — while keeping credentials and secrets out of the documentation.</dd>
+    <dt>Tools used</dt>
+    <dd>Named Credentials, REST concepts, Apex, Batch Jobs, Permission Sets, Reports, Confluence</dd>
+    <dt>Outcome</dt>
+    <dd>The integration became supportable in BAU: ownership was clearer, authentication and mapping risk dropped, and handoff documentation reduced dependence on tribal knowledge.</dd>
+  </dl>
+</article>
+
+<article class="card project-card">
+  <span class="label">Project 4</span>
+  <h3>Smart Parking CRM & Operational Automation</h3>
+  <dl>
+    <dt>Business problem</dt>
+    <dd>At Smart Park, reservation data, payment status, shuttle assignments, lot capacity, and customer issues lived in disconnected views. Agents and operations staff needed one CRM system to run bookings, service cases, and day-of coordination without chasing status across tools.</dd>
+    <dt>Solution</dt>
+    <dd>I built custom objects for reservations, customers, payments, shuttle assignments, and lot capacity, then layered Apex, triggers, validation rules, and record-triggered Flows for booking controls, status updates, notifications, and operational tasks. I designed agent Lightning pages and Service Cloud-style case workflows for payment issues, delays, cancellations, refunds, and escalations, and integrated payment, SMS, email, booking, and mapping systems through REST/JSON with validation and error logging. Reports and dashboards covered reservation volume, response time, payment status, shuttle activity, and recurring issue patterns.</dd>
+    <dt>Tools used</dt>
+    <dd>Salesforce CRM, Apex, Flow, Lightning Pages, REST APIs, JSON, Cases, Reports, Dashboards</dd>
+    <dt>Outcome</dt>
+    <dd>Operations ran from a single CRM view, failed integrations were easier to investigate, and customer issues moved through clearer case and escalation paths.</dd>
+  </dl>
+</article>
+
+<article class="card project-card">
+  <span class="label">Project 5</span>
+  <h3>Retail Loyalty & Campaign CRM</h3>
+  <dl>
+    <dt>Business problem</dt>
+    <dd>At Clibase, retail, food service, pharmacy, and fitness clients were still running customers, orders, promotions, and loyalty from spreadsheets or disconnected tools. Owners needed structured CRM workflows and one place to see orders, payments, inventory signals, and campaign results.</dd>
+    <dt>Solution</dt>
+    <dd>I designed custom objects for customers, orders, products, promotions, loyalty rewards, inventory, and service requests. Apex triggers, SOQL, validation rules, and Flows handled profile updates, order tracking, promotion eligibility, loyalty points, and follow-up tasks. I integrated Salesforce with POS, web store, payment, and Messenger ordering systems via REST/JSON, then built reports and dashboards for sales trends, customer behavior, campaign performance, and retention decisions. Onboarding included field mapping, data import, duplicate review, and staff guidance.</dd>
+    <dt>Tools used</dt>
+    <dd>Apex, SOQL, Flow, Custom Objects, REST APIs, JSON, Reports, Dashboards, Data Loader</dd>
+    <dt>Outcome</dt>
+    <dd>Clients reduced duplicate entry, gained a unified customer and order view, and could run loyalty and promotions from configurable CRM rules instead of manual tracking.</dd>
+  </dl>
+</article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container grid-2">
+    <div>
+      <h2>Architecture pattern</h2>
+      <p class="lead">Across these projects, I connect external platforms into governed Salesforce workflows — APIs, data validation, automation, security, observability, and release controls — so the CRM stays reliable as the business grows.</p>
+    </div>
+    <div class="visual"><img src="assets/pipeline.svg" alt="Salesforce integration architecture"></div>
+  </div>
+</section>
+</main>
 
 <footer class="footer">
   <div class="container footer-inner">

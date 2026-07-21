@@ -1,12 +1,12 @@
 # Michael Ibea — Salesforce Developer Portfolio
 
-A multi-page, recruiter-friendly portfolio built from Michael Haries Namuco Ibea's resume and aligned to Salesforce Developer opportunities with an emphasis on Salesforce AI-ready foundations.
+A multi-page portfolio for Michael Haries Namuco Ibea, focused on Salesforce development, automation, integrations, and AI-ready CRM foundations.
 
 ## Included pages
 
-- `index.html` — hero, professional summary, JD fit, career metrics, quick links
-- `experience.html` — complete professional experience and education
-- `projects.html` — five resume-based Salesforce solution stories
+- `index.html` — hero, how I work, career metrics, quick links
+- `experience.html` — role narratives with company context and delivery focus
+- `projects.html` — five detailed Salesforce solution stories
 - `skills.html` — Salesforce development, automation, integration, security, data, DevOps, and AI-ready capabilities
 - `contact.html` — contact information and availability
 - `assets/style.css` — all site styling
@@ -30,4 +30,4 @@ Extract the ZIP and double-click `index.html`. All CSS and image paths are relat
 
 ## Content note
 
-The site does not claim unverified Agentforce or Einstein implementation experience. It presents Michael's verified Salesforce development, integration, automation, data quality, security, testing, and governance background as directly relevant foundations for responsible Salesforce AI delivery.
+The site does not claim unverified Agentforce or Einstein implementation experience. It presents verified Salesforce development, integration, automation, data quality, security, testing, and governance experience as foundations for responsible Salesforce AI delivery.
